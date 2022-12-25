@@ -1,0 +1,536 @@
+{
+	"info": {
+		"_postman_id": "b05bc534-a19d-409b-9540-241f60d470af",
+		"name": "sh",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://shirapur.pythonanywhere.com/app/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://shirapur.pythonanywhere.com/app/login/",
+					"protocol": "https",
+					"host": [
+						"shirapur",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"app",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://shirapur.pythonanywhere.com/app/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://shirapur.pythonanywhere.com/app/login",
+					"protocol": "https",
+					"host": [
+						"shirapur",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"app",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://shirapur.pythonanywhere.com/app/login/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Username",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "Pass",
+							"value": "test",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shirapur.pythonanywhere.com/app/login/",
+					"protocol": "https",
+					"host": [
+						"shirapur",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"app",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://shirapur.pythonanywhere.com/app/login/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Username",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "Pass",
+							"value": "test",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shirapur.pythonanywhere.com/app/login/",
+					"protocol": "https",
+					"host": [
+						"shirapur",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"app",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://shirapur.pythonanywhere.com/app/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Username",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "Pass",
+							"value": "test",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shirapur.pythonanywhere.com/app/login",
+					"protocol": "https",
+					"host": [
+						"shirapur",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"app",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://shirapur.pythonanywhere.com/app/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Username",
+							"value": "Shirapur1",
+							"type": "text"
+						},
+						{
+							"key": "Pass",
+							"value": "Shirapur@123",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shirapur.pythonanywhere.com/app/register",
+					"protocol": "https",
+					"host": [
+						"shirapur",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"app",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://shirapur.pythonanywhere.com/app/login/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Username",
+							"value": "Shirapur",
+							"type": "text"
+						},
+						{
+							"key": "Pass",
+							"value": "Shirapur@123",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shirapur.pythonanywhere.com/app/login/",
+					"protocol": "https",
+					"host": [
+						"shirapur",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"app",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://shirapur.pythonanywhere.com/app/login/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Username\" : \"Shirapur\",\r\n\"Pass\"\t: \"Shirapur@123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shirapur.pythonanywhere.com/app/login/",
+					"protocol": "https",
+					"host": [
+						"shirapur",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"app",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://shirapur.pythonanywhere.com/app/login/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Username\" : \"Shirapur\",\r\n\t\t\"Pass\"\t: \"Shirapur@123\"\r\n\t}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shirapur.pythonanywhere.com/app/login/",
+					"protocol": "https",
+					"host": [
+						"shirapur",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"app",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://shirapur.pythonanywhere.com/app/login/1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Username\" : \"Shirapur\",\r\n\t\t\"Pass\"\t: \"Shirapur@123\"\r\n\t}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://shirapur.pythonanywhere.com/app/login/1",
+					"protocol": "https",
+					"host": [
+						"shirapur",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"app",
+						"login",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://shirapur.pythonanywhere.com/app/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Username\" : \"Shirapur1\",\r\n\t\t\"Pass\"\t: \"Shirapur@123\"\r\n\t}"
+				},
+				"url": {
+					"raw": "https://shirapur.pythonanywhere.com/app/login/",
+					"protocol": "https",
+					"host": [
+						"shirapur",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"app",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://shirapur.pythonanywhere.com/app/shirapur-app-register/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Username\" : \"Shirapur1\",\r\n\t\t\"Pass\"\t: \"Shirapur@123\"\r\n\t}"
+				},
+				"url": {
+					"raw": "http://shirapur.pythonanywhere.com/app/shirapur-app-register/",
+					"protocol": "http",
+					"host": [
+						"shirapur",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"app",
+						"shirapur-app-register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://shirapur.pythonanywhere.com/app/shirapur-app-register/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Username\" : \"Shirapur1\",\r\n\t\t\"Pass\"\t: \"Shirapur@123\"\r\n\t}"
+				},
+				"url": {
+					"raw": "https://shirapur.pythonanywhere.com/app/shirapur-app-register/",
+					"protocol": "https",
+					"host": [
+						"shirapur",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"app",
+						"shirapur-app-register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://shirapur.pythonanywhere.com/app/shirapur-app-login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\"Username\" : \"Shirapur\",\r\n\t\t\"Pass\"\t: \"Shirapur@123\"\r\n\t}"
+				},
+				"url": {
+					"raw": "https://shirapur.pythonanywhere.com/app/shirapur-app-login/",
+					"protocol": "https",
+					"host": [
+						"shirapur",
+						"pythonanywhere",
+						"com"
+					],
+					"path": [
+						"app",
+						"shirapur-app-login",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
