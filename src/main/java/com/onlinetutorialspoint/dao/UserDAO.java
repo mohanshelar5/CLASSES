@@ -6,10 +6,12 @@ import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.onlinetutorialspoint.model.User;
 import com.onlinetutorialspoint.model.pojo.LoginDetails;
 
+@Component
 public class UserDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
