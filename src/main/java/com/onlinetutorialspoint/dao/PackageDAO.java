@@ -6,7 +6,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.onlinetutorialspoint.model.Person;
 
 public class PackageDAO {
 	@Autowired

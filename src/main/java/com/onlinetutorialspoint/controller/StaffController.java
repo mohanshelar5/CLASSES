@@ -8,38 +8,39 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.onlinetutorialspoint.model.ResponceObject;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import com.onlinetutorialspoint.model.UserDetails;
-import com.onlinetutorialspoint.service.StudentService;
+import com.onlinetutorialspoint.service.StaffService;
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 @RestController
-@RequestMapping(value = "/student")
+@RequestMapping(value = "/staff")
 @CrossOrigin(origins = "*")
-public class StudentControler {
-		@Autowired
-	private StudentService studentService;
-@RequestMapping(value = "/save")
-public ResponceObject create(@RequestBody UserDetails userDetails) {
-	ResponceObject responceObject=new ResponceObject();
-	try {
-		List<UserDetails> user=studentService.save(userDetails);
-		System.out.println(userDetails);
-		if(user.size()>0) {
-			responceObject.setErrorCode("00");
-			responceObject.setData(user);
-		}else {
-			responceObject.setErrorCode("01");
+public class StaffController {
+	@Autowired
+	private StaffService staffService;
+	@RequestMapping(value = "/save")
+	public ResponceObject create(@RequestBody UserDetails userDetails) {
+		ResponceObject responceObject=new ResponceObject();
+		try {
+			List<UserDetails> user=staffService.save(userDetails);
+			
+			if(user.size()>0) {
+				responceObject.setErrorCode("00");
+				responceObject.setData(user);
+			}else {
+				responceObject.setErrorCode("01");
+			}
+			
+		} catch (Exception ex) {
+			System.out.println(ex);
 		}
-		
-	} catch (Exception ex) {
-		System.out.println(ex);
+		return responceObject;
 	}
-	return responceObject;
-}
 	@RequestMapping(value = "/getAllStaff")
 	public ResponceObject create() {
 		ResponceObject responceObject=new ResponceObject();
 		try {
-			List<UserDetails> userDetails=studentService.getAllStudent();
+			List<UserDetails> userDetails=staffService.getAllStaff();
 			if(userDetails.size()>0) {
 				responceObject.setErrorCode("00");
 				responceObject.setData(userDetails);
@@ -51,4 +52,5 @@ public ResponceObject create(@RequestBody UserDetails userDetails) {
 			System.out.println(ex);
 		}
 		return responceObject;
-	}}
+	}
+}

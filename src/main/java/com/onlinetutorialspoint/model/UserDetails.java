@@ -1,16 +1,23 @@
 package com.onlinetutorialspoint.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name = "user_details")
 public class UserDetails {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "ID", nullable = false, length = 10)
 	private Long ID;
 
 	private String fisrt_name; 
@@ -28,6 +35,18 @@ public class UserDetails {
 	private String mobile_number;
 	private String photo; 
 	private String user_type;
+	
+	@OneToOne
+	@JoinColumn(name="uid")
+	@JsonIgnore
+	private User users;
+	
+	public User getUsers() {
+		return users;
+	}
+	public void setUsers(User users) {
+		this.users = users;
+	}
 	public Long getID() {
 		return ID;
 	}

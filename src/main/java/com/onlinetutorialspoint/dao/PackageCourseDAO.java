@@ -7,7 +7,6 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.onlinetutorialspoint.model.PackageCourse;
-import com.onlinetutorialspoint.model.Person;
 
 public class PackageCourseDAO {
 	@Autowired

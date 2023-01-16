@@ -1,25 +1,30 @@
 package com.onlinetutorialspoint.model;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class User {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "ID", nullable = false, length = 10)
 	private Long ID;
-	private String user_name;
+	@Column(name = "USER_NAME")
+	private String userName;
+	@Column(name = "PASSWORD")
 	private String password;
+	@Column(name = "TYPE")
 	private String type;
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "user_id")
+
+	@OneToOne(mappedBy = "users", cascade = CascadeType.ALL, orphanRemoval = true)
 	private UserDetails userDetails;
 	
 	public Long getID() {
@@ -28,11 +33,17 @@ public class User {
 	public void setID(Long iD) {
 		ID = iD;
 	}
-	public String getUser_name() {
-		return user_name;
+	public String getUserName() {
+		return userName;
 	}
-	public void setUser_name(String user_name) {
-		this.user_name = user_name;
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public UserDetails getUserDetails() {
+		return userDetails;
+	}
+	public void setUserDetails(UserDetails userDetails) {
+		this.userDetails = userDetails;
 	}
 	public String getPassword() {
 		return password;

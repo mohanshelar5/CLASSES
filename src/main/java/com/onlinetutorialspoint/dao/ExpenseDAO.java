@@ -7,7 +7,6 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.onlinetutorialspoint.model.Expense;
-import com.onlinetutorialspoint.model.Person;
 
 public class ExpenseDAO {
 	@Autowired

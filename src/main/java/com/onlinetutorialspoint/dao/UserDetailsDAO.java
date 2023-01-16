@@ -2,35 +2,33 @@ package com.onlinetutorialspoint.dao;
 
 import java.util.List;
 
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+import com.onlinetutorialspoint.model.User;
 import com.onlinetutorialspoint.model.UserDetails;
+import com.onlinetutorialspoint.repository.UserDetailsRepository;
+import com.onlinetutorialspoint.repository.UserRepository;
 
+@Component
 public class UserDetailsDAO {
 	@Autowired
-	private SessionFactory sessionFactory;
-
-	private Session getSession() {
-		return sessionFactory.getCurrentSession();
+	UserDetailsRepository userDetailsRepository;
+	
+	@Autowired
+	UserRepository userRepository;
+	
+	public UserDetails save(UserDetails userDetails) {
+		return userDetailsRepository.save(userDetails);
 	}
-	public String saveStudent(UserDetails student) {
-		Long isSuccess = (Long)getSession().save(student);
-		if(isSuccess >= 1){
-			return "Success";
-		}else{
-			return "Error while Saving Person";
-		}
-		
-	}
-	public boolean delete(UserDetails student) {
-		getSession().delete(student);
+	public boolean delete(UserDetails userDetails) {
+		userDetailsRepository.delete(userDetails);
 		return true;
 	}
 
-	@SuppressWarnings("unchecked")
-	public List<UserDetails> getAllPersons() {
-		return getSession().createQuery("from Student").list();
+	public List<UserDetails> getAllUser(String userType) {
+		return userDetailsRepository.listUsers(userType);
 	}
+	
+	
 }
